@@ -1,0 +1,8 @@
+name: 'Setup premake'
+description: 'Install premake'
+branding:
+  icon: 'box'
+  color: 'red'
+runs:
+  using: 'node12'
+  main: 'index.js'

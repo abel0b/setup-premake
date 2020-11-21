@@ -1,0 +1,23 @@
+name: test
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Setup premake
+      uses: ./
+
+    - run: |
+      ls
+      ls .premake
+
+    - run: premake5 --version
