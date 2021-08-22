@@ -7,17 +7,17 @@ async function main() {
     const common = path + "v" + version + "/premake-" + version
     if (process.platform == "win32") {
         const premake = await tc.downloadTool(common + "-windows.zip")
-        core.info("win32" + common)
+        core.setFailed("win32" + common)
         await tc.extractZip(premake, '.premake')
     }
     else if (process.platform == "darwin") {
         const premake = await tc.downloadTool(common + "-macosx.tar.gz")
-        core.info("darwin" + common)
+        core.setFailed("darwin" + common)
         await tc.extractTar(premake, '.premake')
     }
     else {
         const premake = await tc.downloadTool(common + "-linux.tar.gz")
-        core.info("linux" + common)
+        core.setFailed("linux" + common)
         await tc.extractTar(premake, '.premake')
     }
     core.addPath(".premake")
