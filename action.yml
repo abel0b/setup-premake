@@ -1,8 +1,12 @@
-name: 'Setup premake'
-description: 'Install premake'
+name: 'Setup Premake'
+description: 'Install Premake'
 branding:
   icon: 'box'
   color: 'red'
+inputs:
+  version:
+    description: Version of Premake to set up
+    required: true
 runs:
   using: 'node12'
   main: 'index.js'
