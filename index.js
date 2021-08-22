@@ -4,13 +4,12 @@ const tc = require("@actions/tool-cache")
 async function main() {
     const path = "https://github.com/premake/premake-core/releases/download/"
     const version = core.getInput('version', { required: true })
-    const platform = core.getInput('platform', { required: true })
     const common = path + "v" + version + "/premake-" + version
-    if (platform == "win32") {
+    if (process.platform == "win32") {
         const premake = await tc.downloadTool(common + "-windows.zip")
         await tc.extractZip(premake, '.premake')
     }
-    else if (platform == "darwin") {
+    else if (process.platform == "darwin") {
         const premake = await tc.downloadTool(common + "-macosx.tar.gz")
         await tc.extractTar(premake, '.premake')
     }
