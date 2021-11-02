@@ -3,7 +3,7 @@ const tc = require("@actions/tool-cache")
 
 async function main() {
     path = "https://github.com/premake/premake-core/releases/download/"
-    version = "5.0.0-alpha16"
+    version = "5.0.0-beta1"
     common = path + "v" + version + "/premake-" + version
     if (process.platform == "win32") {
         const premake = await tc.downloadTool(common + "-windows.zip")
