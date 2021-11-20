@@ -1,5 +1,9 @@
 name: 'Setup premake'
 description: 'Install premake'
+inputs:
+  version:
+    description: 'Premake version'
+    required: true
 branding:
   icon: 'box'
   color: 'red'
