@@ -1,7 +1,7 @@
 {
   "name": "setup-premake",
   "version": "1.0.0",
-  "description": "",
+  "description": "Github action to setup premake",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/abel0b/setup-premake#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/tool-cache": "^1.6.1"
+    "@actions/core": "^1.6.0",
+    "@actions/tool-cache": "^1.7.1"
   }
 }
