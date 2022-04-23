@@ -23,5 +23,5 @@ jobs:
     - run: mkdir subdir
 
     - working-directory: subdir
-      run: premake5 --help
+      run: premake5 --version
 
