@@ -19,3 +19,9 @@ jobs:
         version: 5.0.0-beta1
 
     - run: premake5 --version
+
+    - run: mkdir subdir
+
+    - working-directory: subdir
+      run: premake5 --version
+
