@@ -1,6 +1,6 @@
 {
   "name": "setup-premake",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Github action to setup premake",
   "main": "index.js",
   "scripts": {
