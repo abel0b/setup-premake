@@ -6,7 +6,7 @@ async function main() {
     const version = core.getInput('version', { required: true })
     const userPath = core.getInput('path', { required: false })
     const pathPrefix = "https://github.com/premake/premake-core/releases/download/" + "v" + version + "/premake-" + version
-    const premakePath = path.join(process.env.GITHUB_WORKSPACE, userPath);;
+    const premakePath = path.join(process.env.GITHUB_WORKSPACE, userPath)
     if (process.platform == "win32") {
         const premake = await tc.downloadTool(pathPrefix + "-windows.zip")
         await tc.extractZip(premake, premakePath)
