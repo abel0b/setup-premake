@@ -1,5 +1,5 @@
 name: 'Setup premake'
-description: 'Install premake'
+description: 'GitHub action to setup premake on Linux, Windows and MacOS.'
 inputs:
   version:
     description: 'Premake version'
