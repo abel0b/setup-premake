@@ -16,7 +16,7 @@ jobs:
     - name: Setup premake
       uses: ./
       with:
-        version: 5.0.0-beta1
+        version: 5.0.0-beta2
 
     - run: premake5 --version
 
