@@ -5,6 +5,9 @@ const path = require("path")
 async function main() {
     const version = core.getInput('version', { required: true })
     const userPath = core.getInput('path', { required: false })
+    if (userPath[0] == '/' || userPath[0] == '~') {
+        throw new Error("Path must be relative to the workspace")
+    }
     const pathPrefix = "https://github.com/premake/premake-core/releases/download/" + "v" + version + "/premake-" + version
     const premakePath = path.join(process.env.GITHUB_WORKSPACE, userPath)
     if (process.platform == "win32") {
