@@ -19,7 +19,7 @@ jobs:
     - name: Setup premake
       uses: ./
       with:
-        version: $PREMAKE_VERSION
+        version: ${{ env.PREMAKE_VERSION }}
 
     - run: premake5 --version
 
@@ -32,7 +32,7 @@ jobs:
 
     - uses: ./
       with:
-        version: $PREMAKE_VERSION
+        version: ${{ env.PREMAKE_VERSION }}
         path: foo
 
     - run: test -x foo/bin/premake5
