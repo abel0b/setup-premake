@@ -4,7 +4,7 @@ GitHub action to setup premake on Linux, Windows and MacOS.
 ## Usage
 To setup premake, add a step to your GitHub workflow configuration :
 ```yaml
-- uses: abel0b/setup-premake@v2.2
+- uses: abel0b/setup-premake@v2.3
   with:
     version: "5.0.0-beta2"
 ```

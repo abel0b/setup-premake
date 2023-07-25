@@ -1,6 +1,6 @@
 {
   "name": "setup-premake",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Github action to setup premake on Linux, Windows and MacOS.",
   "main": "index.js",
   "scripts": {
