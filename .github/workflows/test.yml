@@ -23,7 +23,7 @@ jobs:
 
     - run: premake5 --version
 
-    - run: test -x .premake/bin/premake5
+    - run: test -x .premake/premake5
 
     - run: mkdir subdir
 
@@ -35,4 +35,4 @@ jobs:
         version: ${{ env.PREMAKE_VERSION }}
         path: foo
 
-    - run: test -x foo/bin/premake5
+    - run: test -x foo/premake5
