@@ -17,3 +17,6 @@ For example, to compile your project using gmake2 generator, add a step :
     - premake5 gmake2
     - make
 ```
+
+By default, premake is installed in `.premake` directory relative to the GitHub workspace.
+You can optionnally change it using the `path` input.
