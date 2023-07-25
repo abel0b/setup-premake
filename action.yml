@@ -4,6 +4,10 @@ inputs:
   version:
     description: 'Premake version'
     required: true
+  path:
+    description: 'Premake path'
+    required: false
+    default: '.premake'
 branding:
   icon: 'box'
   color: 'red'
