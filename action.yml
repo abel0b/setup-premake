@@ -12,5 +12,5 @@ branding:
   icon: 'box'
   color: 'red'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'index.js'
